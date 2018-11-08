@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using DevExpress.Skins;
 
-namespace Dashboard_DataLoading {
+namespace Dashboard_DataLoading_Example {
     static class Program {
         /// <summary>
         /// The main entry point for the application.

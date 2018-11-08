@@ -1,6 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard_DataLoading", "Dashboard_DataLoading\Dashboard_DataLoading.csproj", "{170D9A1D-EB60-41F9-A904-F7EA403D80D4}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard_DataLoading_Example", "Dashboard_DataLoading_Example\Dashboard_DataLoading_Example.csproj", "{170D9A1D-EB60-41F9-A904-F7EA403D80D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,5 +17,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {630769A4-F678-401E-AC50-E4A877ACA965}
 	EndGlobalSection
 EndGlobal

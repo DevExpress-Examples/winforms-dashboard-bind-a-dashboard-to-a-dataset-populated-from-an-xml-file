@@ -1,10 +1,14 @@
-# How to bind a dashboard to a DataSet populated from an XML file
+# How to load XML data from a file to the dashboard at runtime
 
 
-<p>The following example demonstrates how to bind a dashboard to a DataSet populated from an XML file.</p>
-<p>In this example, an XML file provides data about car models and corresponding prices. The data source is created for the 'Cars' data table and added to the <a href="http://documentation.devexpress.com/#Dashboard/DevExpressDashboardCommonDashboard_DataSourcestopic"><u>Dashboard.DataSources</u></a> collection on the first load.</p>
-<p>To update the displayed data, the <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_ReloadDatatopic"><u>DashboardViewer.ReloadData</u></a> method is called. This raises the <a href="http://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardDesigner_DataLoadingtopic"><u>DashboardViewer.DataLoading</u></a> event and allows supplying the dashboard with updated data.</p>
+This example contains a dashboard bound to an object data source with fake data whose structure is defined by an XML schema. The actual data is loaded at runtime from an XML file.
 
-<br/>
+To load the data, click the **Load Data** custom button in the [dashboard title](https://docs.devexpress.com/Dashboard/15618/creating-dashboards/creating-dashboards-in-the-winforms-designer/dashboard-layout/dashboard-title). The button is created by handling the [CustomizeDashboardTitle](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.CustomizeDashboardTitle) event.
+Its click action calls the [DashboardViewer.ReloadData](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.ReloadData) method that triggers the [DashboardViewer.DataLoading](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DataLoading)event. The actual data are obtained within the event handler and assigned to the [e.Data](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DataLoadingEventArgs.Data) property.
+
+![](~/images/Screenshot.png)
+
+
+
 
 
