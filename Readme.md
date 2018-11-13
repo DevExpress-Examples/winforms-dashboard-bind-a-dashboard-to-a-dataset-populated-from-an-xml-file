@@ -13,8 +13,8 @@ The dashboard class is created in Visual Studio designer. The dashboard is bound
 
 The data source is created using the Data Source Wizard...
 
-![](~/images/DataSourceWizard.png)
+![](https://github.com/DevExpress-Examples/how-to-bind-a-dashboard-to-a-dataset-populated-from-an-xml-file-e4857/blob/18.2.3%2B/images/DataSourceWizard.png)
 
 ... and set up as illustrated in the picture below:
 
-![](~/images/DataSource.png)
+![](https://github.com/DevExpress-Examples/how-to-bind-a-dashboard-to-a-dataset-populated-from-an-xml-file-e4857/blob/18.2.3%2B/images/DataSource.png)
