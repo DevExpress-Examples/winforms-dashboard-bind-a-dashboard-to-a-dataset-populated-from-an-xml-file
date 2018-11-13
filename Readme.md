@@ -9,6 +9,12 @@ Its click action calls the [DashboardViewer.ReloadData](https://docs.devexpress.
 ![](https://github.com/DevExpress-Examples/how-to-bind-a-dashboard-to-a-dataset-populated-from-an-xml-file-e4857/blob/18.2.3%2B/images/Screenshot.png)
 
 
+The dashboard class is created in Visual Studio designer. The dashboard is bound to an object data source built from XML schema contained in an XSD file. The dashboard designer displays auto-generated fake data. 
 
+The data source is created using the Data Source Wizard...
 
+![](~/images/DataSourceWizard.png)
 
+... and set up as illustrated in the picture below:
+
+![](~/images/DataSource.png)
