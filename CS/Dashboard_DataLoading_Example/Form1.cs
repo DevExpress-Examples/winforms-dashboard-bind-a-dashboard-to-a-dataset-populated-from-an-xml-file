@@ -22,14 +22,16 @@ namespace Dashboard_DataLoading_Example
         {
             if (e.DataSourceName == "EnergyConsumptionBySector")
             {
-                e.Data = GetData();
+                e.Data = GetData(dataFileName);
             }
         }
 
-        public DataTable GetData()
+        public DataTable GetData(string fileName)
         {
+            if (fileName == string.Empty) return null;
+
             DataSet xmlDataSet = new DataSet();
-            xmlDataSet.ReadXml(@"..\..\Data\DashboardEnergyConsumptionBySector.xml");
+            xmlDataSet.ReadXml(fileName);
             return xmlDataSet.Tables["CountriesBySector"];
         }
 

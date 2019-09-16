@@ -18,13 +18,17 @@ Namespace Dashboard_DataLoading_Example
 
 		Private Sub DashboardViewer1_DataLoading(ByVal sender As Object, ByVal e As DataLoadingEventArgs)
 			If e.DataSourceName = "EnergyConsumptionBySector" Then
-				e.Data = GetData()
+				e.Data = GetData(dataFileName)
 			End If
 		End Sub
 
-		Public Function GetData() As DataTable
+		Public Function GetData(ByVal fileName As String) As DataTable
+			If fileName = String.Empty Then
+				Return Nothing
+			End If
+
 			Dim xmlDataSet As New DataSet()
-			xmlDataSet.ReadXml("..\..\Data\DashboardEnergyConsumptionBySector.xml")
+			xmlDataSet.ReadXml(fileName)
 			Return xmlDataSet.Tables("CountriesBySector")
 		End Function
 
