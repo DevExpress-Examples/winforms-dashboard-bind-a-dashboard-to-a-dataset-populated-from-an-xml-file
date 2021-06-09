@@ -25,4 +25,5 @@ The data source is created using the Data Source Wizard...
 
 ## Documentation
 
-[Data Sources](https://docs.devexpress.com/Dashboard/116522/)
+- [Data Sources](https://docs.devexpress.com/Dashboard/116522/)
+- [Providing Data](https://docs.devexpress.com/Dashboard/16914)
