@@ -1,3 +1,7 @@
+*Files to look at*:
+
+* [Form1.cs](./CS/Dashboard_DataLoading_Example/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_DataLoading_Example/Form1.vb))
+
 # How to Load XML Data from a File at Runtime
 
 
@@ -18,3 +22,7 @@ The data source is created using the Data Source Wizard...
 ... and set up as illustrated in the picture below:
 
 ![DataSource](/images/DataSource.png)
+
+## Documentation
+
+[Data Sources](https://docs.devexpress.com/Dashboard/116522/)
