@@ -4,39 +4,32 @@ using DevExpress.XtraEditors;
 using System;
 using System.Data;
 
-namespace Dashboard_DataLoading_Example
-{
-    public partial class Form1 : XtraForm
-    {
+namespace Dashboard_DataLoading_Example {
+    public partial class Form1 : XtraForm {
 
         string dataFileName = string.Empty;
-        public Form1()
-        {
+        
+        public Form1() {
             InitializeComponent();
             dashboardViewer1.CustomizeDashboardTitle += DashboardViewer1_CustomizeDashboardTitle;
             dashboardViewer1.Dashboard = new Dashboard1();
             dashboardViewer1.DataLoading += DashboardViewer1_DataLoading;
         }
 
-        private void DashboardViewer1_DataLoading(object sender, DataLoadingEventArgs e)
-        {
-            if (e.DataSourceName == "EnergyConsumptionBySector")
-            {
+        private void DashboardViewer1_DataLoading(object sender, DataLoadingEventArgs e) {
+            if (e.DataSourceName == "EnergyConsumptionBySector") {
                 e.Data = GetData(dataFileName);
             }
         }
 
-        public DataTable GetData(string fileName)
-        {
+        public DataTable GetData(string fileName) {
             if (fileName == string.Empty) return null;
-
             DataSet xmlDataSet = new DataSet();
             xmlDataSet.ReadXml(fileName);
             return xmlDataSet.Tables["CountriesBySector"];
         }
 
-        private void DashboardViewer1_CustomizeDashboardTitle(object sender, CustomizeDashboardTitleEventArgs e)
-        {
+        private void DashboardViewer1_CustomizeDashboardTitle(object sender, CustomizeDashboardTitleEventArgs e) {
             DashboardToolbarItem titleButton = new DashboardToolbarItem("Load Data",
                 new Action<DashboardToolbarItemClickEventArgs>((args) =>
                 {
@@ -45,8 +38,7 @@ namespace Dashboard_DataLoading_Example
             titleButton.Caption = "Load Data";
             e.Items.Add(titleButton);
         }
-        private void LoadNewData()
-        {
+        private void LoadNewData() {
             dataFileName = @"..\..\Data\DashboardEnergyConsumptionBySector.xml";
             dashboardViewer1.ReloadData();
         }
