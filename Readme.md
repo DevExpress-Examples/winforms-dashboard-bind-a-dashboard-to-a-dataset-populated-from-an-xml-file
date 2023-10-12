@@ -7,8 +7,7 @@
 
 * [Form1.cs](./CS/Dashboard_DataLoading_Example/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_DataLoading_Example/Form1.vb))
 
-# How to Load XML Data from a File at Runtime
-
+# BI Dashboard for WinForms - How to Load XML Data from a File at Runtime
 
 This example contains a dashboard bound to an object data source with fake data whose structure is defined by an XML schema. The actual data is loaded at runtime from an XML file.
 
