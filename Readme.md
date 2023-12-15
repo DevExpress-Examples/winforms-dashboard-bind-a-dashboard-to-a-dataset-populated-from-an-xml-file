@@ -3,9 +3,6 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4857)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-*Files to look at*:
-
-* [Form1.cs](./CS/Dashboard_DataLoading_Example/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_DataLoading_Example/Form1.vb))
 
 # BI Dashboard for WinForms - How to Load XML Data from a File at Runtime
 
@@ -16,16 +13,11 @@ Its click action calls the [DashboardViewer.ReloadData](https://docs.devexpress.
 
 ![screenshot](/images/Screenshot.png)
 
-
 The dashboard class is created in Visual Studio designer. The dashboard is bound to an object data source built from XML schema contained in an XSD file. The dashboard designer displays auto-generated fake data. 
 
-The data source is created using the Data Source Wizard...
+## Files to Review
 
-![DataSourceWizard](/images/DataSourceWizard.png)
-
-... and set up as illustrated in the picture below:
-
-![DataSource](/images/DataSource.png)
+* [Form1.cs](./CS/Dashboard_DataLoading_Example/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_DataLoading_Example/Form1.vb))
 
 ## Documentation
 
