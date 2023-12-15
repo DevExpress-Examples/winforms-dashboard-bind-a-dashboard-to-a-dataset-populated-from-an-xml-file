@@ -1,22 +1,20 @@
-﻿Imports System
+Imports System
 Imports System.Windows.Forms
 Imports DevExpress.Skins
 
 Namespace Dashboard_DataLoading_Example
-	Friend NotInheritable Class Program
 
-		Private Sub New()
-		End Sub
+    Friend Module Program
 
-		''' <summary>
-		''' The main entry point for the application.
-		''' </summary>
-		<STAThread>
-		Shared Sub Main()
-			SkinManager.EnableFormSkins()
-			Application.EnableVisualStyles()
-			Application.SetCompatibleTextRenderingDefault(False)
-			Application.Run(New Form1())
-		End Sub
-	End Class
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
+        <STAThread>
+        Sub Main()
+            Call SkinManager.EnableFormSkins()
+            Call Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            Call Application.Run(New Form1())
+        End Sub
+    End Module
 End Namespace
